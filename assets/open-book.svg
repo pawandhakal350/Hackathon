@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Open book illustration</title>
+  <desc id="desc">An open study book with a pencil</desc>
+  <rect width="640" height="360" rx="28" fill="#1b2638"/>
+  <circle cx="116" cy="76" r="48" fill="#d99db1" opacity=".12"/>
+  <circle cx="530" cy="286" r="74" fill="#75a7ff" opacity=".10"/>
+  <path d="M320 132c-74-48-154-48-232-10v184c82-30 156-20 232 24z" fill="#edf4ff"/>
+  <path d="M320 132c74-48 154-48 232-10v184c-82-30-156-20-232 24z" fill="#edf4ff"/>
+  <path d="M320 132v198" stroke="#b97791" stroke-width="6"/>
+  <path d="M112 160c54-20 108-14 166 16M112 190c54-20 108-14 166 16M112 220c54-20 108-14 166 16"
+        fill="none" stroke="#75a7ff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M362 176c58-30 112-24 166 12M362 206c58-30 112-24 166 12M362 236c58-30 112-24 166 12"
+        fill="none" stroke="#d99db1" stroke-width="8" stroke-linecap="round"/>
+  <path d="M472 300l74-172 24 10-74 172z" fill="#58c3c7"/>
+  <path d="M496 310l-28 24 8-34z" fill="#edf4ff"/>
+</svg>

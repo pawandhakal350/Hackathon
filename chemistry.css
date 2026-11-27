@@ -1,12 +1,12 @@
 :root {
-    --background: #f5f7fb;
-    --surface: #ffffff;
-    --text: #252842;
-    --muted: #697087;
-    --primary: #6457d9;
-    --teal: #168c83;
-    --coral: #c65e4b;
-    --border: #e2e5ef;
+    --background: #101827;
+    --surface: #1b2638;
+    --text: #edf4ff;
+    --muted: #aebcd0;
+    --primary: #d99db1;
+    --teal: #58c3c7;
+    --coral: #e58b78;
+    --border: #344258;
 }
 
 * {
@@ -16,8 +16,8 @@
 body {
     margin: 0;
     background:
-        radial-gradient(ellipse at 8% 8%, #e9e6ff 0, transparent 32%),
-        radial-gradient(ellipse at 92% 18%, #e3f5f1 0, transparent 28%),
+        radial-gradient(ellipse at 8% 8%, rgba(217, 157, 177, 0.14) 0, transparent 32%),
+        radial-gradient(ellipse at 92% 18%, rgba(117, 167, 255, 0.10) 0, transparent 28%),
         var(--background);
     color: var(--text);
     font-family: Arial, sans-serif;
@@ -30,7 +30,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(226, 229, 239, 0.7);
+    border-bottom: 1px solid rgba(58, 58, 58, 0.9);
 }
 
 header > a {
@@ -87,7 +87,7 @@ main > p {
     border-top: 3px solid var(--primary);
     border-radius: 14px;
     background: var(--surface);
-    box-shadow: 0 4px 16px rgba(35, 37, 58, 0.04);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
     transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
@@ -104,8 +104,8 @@ main > p {
 .math-box:hover,
 .chem-box:hover {
     transform: translateY(-2px);
-    border-color: #c5c0fa;
-    box-shadow: 0 8px 22px rgba(35, 37, 58, 0.08);
+    border-color: #b97791;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
 }
 
 .math-box summary,
@@ -136,7 +136,7 @@ main > p {
 
 .math-box li::marker,
 .chem-box li::marker {
-    color: #b7b2ef;
+    color: #a99cf5;
 }
 
 .math-box li a,
