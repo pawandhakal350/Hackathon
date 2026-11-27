@@ -1,11 +1,10 @@
-# Hackathon
-This project is for  Hackathon competetion hosted by sos school made by the students of shree janta secondary school.
-For this hackathon we are building a site for all the students and people who find learning material books pdf hard to find in internet by providing them a place for them to get all the notes and studying materials they nedd for their studies.
+Hackathon Project
 
-study materials is a localized Learning Management System designed to bridge the digital education gap in Nepal. Many schools, colleges,  institutes rely on fragmented tools that consume heavy bandwidth and it is free. Our platform unifies , downloadable notes (tailored for SEE, +2,)  makes quality digital learning accessible, affordable, and engaging across Nepal
+Proposal Study Materials – A Localized Learning Management System Project Context This project is developed by the students of Shree Janta Secondary School for the hackathon competition hosted by SOS School.
 
-we have used manily html and css to build this site and we can improve its working capbilities by adding laungages like java and python.
+Project Overview Study Materials is a learning platform designed for students and learners who struggle to find free, reliable, and easily accessible study materials, notes, and educational PDF books online. Our goal is to provide a centralized platform where learners can conveniently access the resources they need for their studies. Our Vision Study Materials is a localized Learning Management System (LMS) designed to help bridge the digital education gap in Nepal. Many schools, colleges, and educational institutions rely on scattered resources and platforms that can be difficult to access, particularly for students with limited internet connectivity. Our platform aims to bring learning resources together in one place, offering downloadable notes and study materials tailored to Nepal's education system, including SEE and +2 levels. By making educational resources free and accessible, we hope to make learning more affordable, convenient, and engaging for students across Nepal. Technology Used We primarily used HTML and CSS to develop our website's structure and design.
 
-From : Last Man team.
-school:janta secondary school
+In the future, we plan to expand its functionality by integrating JavaScript and Python, enabling more interactive features and improved capabilities.
 
+Developed By: Last Man Team
+School: Shree Janta Secondary School 
