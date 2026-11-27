@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySpace | Study Materials</title>
+</head>
+<body>
+    <header>
+        <a href="#" aria-label="StudySpace home">StudySpace</a>
 
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#subjects">Subjects</a></li>
+                <li><a href="#materials">Study materials</a></li>
+                <li><a href="#study-plan">Study plan</a></li>
+            </ul>
+        </nav>
+
+        <form action="#" method="get" role="search">
+            <label for="site-search">Search study materials</label>
+            <input id="site-search" name="q" type="search" placeholder="Search materials">
+            <button type="submit">Search</button>
+        </form>
+
+        <a href="#">My profile</a>
+    </header>
+
+    <main id="dashboard">
+        <section aria-labelledby="welcome-heading">
+            <h1 id="welcome-heading">Welcome back, Student</h1>
+            <p>Pick up where you left off or explore your study materials.</p>
+        </section>
+
+        <section id="subjects" aria-labelledby="subjects-heading">
+            <h2 id="subjects-heading">Browse subjects</h2>
+            <ul>
+                <li><a href="#materials">Mathematics</a></li>
+                <li><a href="#materials">Science</a></li>
+                <li><a href="#materials">chemistry</a></li>
+                <li><a href="#materials">History</a></li>
+                <li><a href="#materials">Computer science</a></li>
+            </ul>
+        </section>
+
+        <section id="materials" aria-labelledby="materials-heading">
+            <h2 id="materials-heading">Recent study materials</h2>
+            <article>
+                <h3><a href="#">Algebra: Linear equations</a></h3>
+                <p>Mathematics · Notes</p>
+                <p>A review of equations, variables, and worked examples.</p>
+                <a href="#">Open material</a>
+            </article>
+            <article>
+                <h3><a href="#">Introduction to cell biology</a></h3>
+                <p>Science · Study guide</p>
+                <p>Explore cell structure and the functions of its key parts.</p>
+                <a href="#">Open material</a>
+            </article>
+            <article>
+                <h3><a href="#">World history: Ancient civilizations</a></h3>
+                <p>History · Flashcards</p>
+                <p>Review important people, places, and events.</p>
+                <a href="#">Open material</a>
+            </article>
+        </section>
+
+        <aside id="study-plan" aria-labelledby="study-plan-heading">
+            <h2 id="study-plan-heading">Your study plan</h2>
+            <ol>
+                <li>
+                    <h3>Review algebra notes</h3>
+                    <p>Mathematics · 20 minutes</p>
+                </li>
+                <li>
+                    <h3>Complete cell biology quiz</h3>
+                    <p>Science · 15 minutes</p>
+                </li>
+            </ol>
+            <a href="#">View full study plan</a>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudySpace</p>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
