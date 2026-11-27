@@ -1,4 +1,4 @@
-/* StudySpace - Shared Subject Styles */
+/* StudySpace - Shared Subject Style*/
 
 :root {
     --background: #10141c;
@@ -99,6 +99,30 @@ body {
     border-radius: 50%;
     background: #183b3b;
     color: var(--teal);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    min-height: 40px;
+    padding: 8px 14px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: #1a202b;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+    border-color: var(--teal);
+    color: var(--teal);
+    transform: translateX(-3px);
 }
 
 /* Hero Section */
