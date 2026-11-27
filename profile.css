@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(ellipse at 10% 12%, #e9e6ff 0, transparent 35%),
+        radial-gradient(ellipse at 92% 85%, #e3f5f2 0, transparent 32%),
+        #f5f7fb;
+    color: #252842;
+    font-family: Arial, sans-serif;
+}
+
+.login {
+    width: min(420px, 100%);
+    padding: 36px;
+    border: 1px solid #e2e5ef;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 18px 48px rgba(57, 52, 112, 0.12);
+}
+
+.home-link {
+    display: inline-block;
+    margin-bottom: 32px;
+    color: #6457d9;
+    text-decoration: none;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: #6457d9;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.intro {
+    margin: 10px 0 26px;
+    color: #697087;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+    margin: 16px 0 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e5ef;
+    border-radius: 8px;
+    background: #fbfbfe;
+    color: #252842;
+    font: inherit;
+}
+
+input:focus {
+    border-color: #6457d9;
+    outline: 2px solid #6457d933;
+}
+
+button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 13px;
+    border: 0;
+    border-radius: 8px;
+    background: linear-gradient(110deg, #6457d9, #168c83);
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(110deg, #5145c7, #11776f);
+}
+
+@media (max-width: 480px) {
+    .login {
+        padding: 28px 22px;
+    }
+}
