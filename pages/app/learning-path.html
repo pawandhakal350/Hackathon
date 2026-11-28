@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Path | Study Hub</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/essentials.css">
+    <link rel="stylesheet" href="../../styles/sidebar.css">
+</head>
+<body class="sidebar-layout">
+    <input class="sidebar-checkbox" type="checkbox" id="sidebar-toggle" aria-label="Toggle navigation">
+    <label class="sidebar-open" for="sidebar-toggle" aria-label="Open navigation menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        <span>Menu</span>
+    </label>
+    <aside class="site-sidebar" aria-label="Study Hub navigation">
+        <div class="sidebar-top">
+            <a class="sidebar-brand" href="../../index.html" aria-label="Study Hub home">
+                <span class="sidebar-brand-mark">S</span>
+                <span>Study Hub</span>
+            </a>
+            <label class="sidebar-close" for="sidebar-toggle" aria-label="Close navigation menu">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+            </label>
+        </div>
+        <nav class="sidebar-nav" aria-label="Main navigation">
+            <a class="sidebar-link" href="../../index.html">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>
+                <span>Home</span>
+            </a>
+            <a class="sidebar-link" href="../../index.html#subjects">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 1 4 17.5zM4 5.5v12M8 7h8M8 11h8"></path></svg>
+                <span>Subjects</span>
+            </a>
+            <a class="sidebar-link" href="essentials.html">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"></path></svg>
+                <span>Study Essentials</span>
+            </a>
+            <a class="sidebar-link" href="../notes/index.html">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM14 3v5h5M8 12h8M8 16h8"></path></svg>
+                <span>Notes</span>
+            </a>
+            <a class="sidebar-link" href="learning-path.html" aria-current="page">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18c4-1 5-7 9-7 3 0 4 3 7 1M4 18l4-2M13 11l-2-3M20 12l-3 4"></path></svg>
+                <span>Learning Path</span>
+            </a>
+        </nav>
+        <nav class="sidebar-profile" aria-label="Account navigation">
+            <a class="sidebar-link" href="profile.html">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg>
+                <span>Profile / Login</span>
+            </a>
+        </nav>
+    </aside>
+    <label class="sidebar-backdrop" for="sidebar-toggle" aria-hidden="true"></label>
+
+    <main class="essentials-main">
+        <section class="essentials-intro" aria-labelledby="path-title">
+            <p class="eyebrow">YOUR WEEKLY ROUTE</p>
+            <h1 id="path-title">Learning path</h1>
+            <p>Build steady study habits with a simple four-milestone plan. Start small, finish clearly, and keep moving.</p>
+        </section>
+
+        <section class="essentials-section" aria-labelledby="today-title">
+            <div class="essentials-heading">
+                <p class="eyebrow">CURRENT ROUTE</p>
+                <h2 id="today-title">Today&apos;s focused plan</h2>
+            </div>
+            <div class="sheet-grid path-grid">
+                <article class="sheet-card path-card">
+                    <span class="path-number">01</span>
+                    <h3>Review</h3>
+                    <p class="sheet-note">Spend 15 minutes refreshing yesterday&apos;s most important notes.</p>
+                    <a class="hero-cta" href="../notes/index.html">Open notes <span aria-hidden="true">&rarr;</span></a>
+                </article>
+                <article class="sheet-card path-card">
+                    <span class="path-number">02</span>
+                    <h3>Learn</h3>
+                    <p class="sheet-note">Study one concept and write it in your own words.</p>
+                    <a class="hero-cta" href="../../index.html#subjects">Choose subject <span aria-hidden="true">&rarr;</span></a>
+                </article>
+                <article class="sheet-card path-card">
+                    <span class="path-number">03</span>
+                    <h3>Practice</h3>
+                    <p class="sheet-note">Solve five questions before checking the answers.</p>
+                    <a class="hero-cta" href="essentials.html">View essentials <span aria-hidden="true">&rarr;</span></a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Study Hub</p>
+    </footer>
+</body>
+</html>

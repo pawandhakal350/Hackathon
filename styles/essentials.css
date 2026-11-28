@@ -190,6 +190,33 @@
     background: var(--surface);
 }
 
+.path-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.path-card {
+    position: relative;
+    min-height: 220px;
+}
+
+.path-card .hero-cta {
+    position: absolute;
+    bottom: 22px;
+}
+
+.path-number {
+    display: inline-grid;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 16px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--surface-strong);
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: bold;
+}
+
 @media (max-width: 900px) {
     .sheet-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
