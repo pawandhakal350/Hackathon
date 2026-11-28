@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Hub</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header class="header">
@@ -18,7 +18,7 @@
             <a href="#subjects">Subjects</a>
         </nav>
 
-        <a class="profile-link" href="profile.html" aria-label="Open profile">
+        <a class="profile-link" href="pages/app/profile.html" aria-label="Open profile">
             <span class="profile-icon">&#128100;</span>
             <span>Login</span>
         </a>
@@ -28,8 +28,8 @@
         <section class="hero">
             <div class="hero-content">
                 <p class="eyebrow">YOUR LEARNING SPACE</p>
-                <h1>Learn. Practice.<br>Grow every day.</h1>
-                <p class="hero-text">Build strong study habits with organized lessons and practice materials.</p>
+                <h1>Master your courses. Ace your exams.</h1>
+                <p class="hero-text">Organized notes, practice quizzes, and study tools for high school and college.</p>
 
                 <form class="search" action="#" method="get">
                     <input type="search" name="q" placeholder="What do you want to learn?">
@@ -38,23 +38,21 @@
             </div>
 
             <div class="hero-card">
-                <p>Weekly progress</p>
-                <strong>5 of 7 days</strong>
-                <div class="progress"><span></span></div>
-                <div class="week">
-                    <span>M</span><span>T</span><span>W</span><span>T</span>
-                    <span>F</span><span>S</span><span>S</span>
-                </div>
+                <p class="streak-title">Start your streak</p>
+                <p class="streak-text">Sign up to track your progress</p>
+                <a class="hero-cta" href="pages/app/profile.html">Sign up / Log in</a>
             </div>
         </section>
 
         <section class="image-gallery" aria-label="Study highlights">
             <figure>
-                <img src="assets/study-desk.svg" alt="A laptop and books on a study desk">
-                <figcaption>Study essentials</figcaption>
+                <a class="gallery-link" href="pages/app/essentials.html">
+                    <img src="assets/images/study-desk.svg" alt="A laptop and books on a study desk">
+                    <figcaption>Study essentials</figcaption>
+                </a>
             </figure>
             <figure>
-                <img src="assets/open-book.svg" alt="An open book with a pencil">
+                <img src="assets/images/open-book.svg" alt="An open book with a pencil">
                 <figcaption>Explore lessons</figcaption>
             </figure>
         </section>
@@ -65,63 +63,80 @@
                     <p class="eyebrow">EXPLORE</p>
                     <h2>Study subjects</h2>
                 </div>
-                <a href="#">View all</a>
+                <a href="#level-filters">View all</a>
+            </div>
+
+            <div class="level-filters" id="level-filters" role="radiogroup" aria-label="Filter subjects by study level">
+                <input type="radio" name="study-level" id="level-all" checked>
+                <label for="level-all">All</label>
+                <input type="radio" name="study-level" id="level-high-school">
+                <label for="level-high-school">High School (+2)</label>
+                <input type="radio" name="study-level" id="level-college">
+                <label for="level-college">College</label>
             </div>
 
             <div class="subject-grid">
-                <a class="subject-card mathematics" href="Mathematics.html">
+                <a class="subject-card mathematics high-school" href="pages/subjects/Mathematics.html">
                     <span class="subject-icon">&#8721;</span>
                     <div>
                         <h3>Mathematics</h3>
                         <p>Algebra, geometry and more</p>
+                        <span class="subject-meta">22 chapters</span>
                     </div>
-                    <span class="arrow">&rarr;</span>
+                    <span class="arrow" aria-hidden="true">&rarr;</span>
                 </a>
 
-                <a class="subject-card science" href="chemistry.html">
+                <a class="subject-card science high-school" href="pages/subjects/chemistry.html">
                     <span class="subject-icon">&#9879;</span>
                     <div>
                         <h3>Chemistry</h3>
                         <p>Elements and reactions</p>
+                        <span class="subject-meta">17 chapters</span>
                     </div>
-                    <span class="arrow">&rarr;</span>
+                    <span class="arrow" aria-hidden="true">&rarr;</span>
                 </a>
 
-                <a class="subject-card physics" href="physics.html">
+                <a class="subject-card physics high-school" href="pages/subjects/physics.html">
                     <span class="subject-icon">&#9883;</span>
                     <div>
                         <h3>Physics</h3>
                         <p>Motion, energy and forces</p>
+                        <span class="subject-meta">12 chapters</span>
                     </div>
-                    <span class="arrow">&rarr;</span>
+                    <span class="arrow" aria-hidden="true">&rarr;</span>
                 </a>
 
-                <a class="subject-card computer" href="computer.html">
+                <a class="subject-card computer high-school" href="pages/subjects/computer.html">
                     <span class="subject-icon">&lt;/&gt;</span>
                     <div>
                         <h3>Computer</h3>
                         <p>Coding and technology</p>
+                        <span class="subject-meta">1 chapter</span>
                     </div>
-                    <span class="arrow">&rarr;</span>
+                    <span class="arrow" aria-hidden="true">&rarr;</span>
                 </a>
 
-                <a class="subject-card english" href="english.html">
+                <a class="subject-card english high-school" href="pages/subjects/english.html">
                     <span class="subject-icon">Aa</span>
                     <div>
                         <h3>English</h3>
                         <p>Reading and writing</p>
+                        <span class="subject-meta">1 chapter</span>
                     </div>
-                    <span class="arrow">&rarr;</span>
+                    <span class="arrow" aria-hidden="true">&rarr;</span>
                 </a>
 
-                <a class="subject-card nepali" href="nepali.html">
+                <a class="subject-card nepali high-school" href="pages/subjects/nepali.html">
                     <span class="subject-icon">&#2309;</span>
                     <div>
                         <h3>Nepali</h3>
                         <p>Language and literature</p>
+                        <span class="subject-meta">1 chapter</span>
                     </div>
-                    <span class="arrow">&rarr;</span>
+                    <span class="arrow" aria-hidden="true">&rarr;</span>
                 </a>
+
+                <p class="level-empty">College-level subjects are coming soon.</p>
             </div>
         </section>
     </main>

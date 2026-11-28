@@ -1,0 +1,284 @@
+.essentials-main {
+    padding-top: 40px;
+}
+
+.essentials-intro {
+    margin-bottom: 42px;
+}
+
+.essentials-intro h1 {
+    margin-bottom: 12px;
+}
+
+.essentials-intro > p:last-child {
+    max-width: 620px;
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.essentials-section {
+    margin-bottom: 42px;
+}
+
+.essentials-heading {
+    margin-bottom: 18px;
+}
+
+.essentials-heading .eyebrow {
+    margin-bottom: 8px;
+}
+
+.essentials-heading h2 {
+    margin: 0;
+    color: var(--text);
+    font-size: 28px;
+}
+
+.sheet-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+    gap: 16px;
+}
+
+.sheet-card {
+    min-width: 0;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--surface);
+    box-shadow: 0 4px 15px rgba(38, 33, 29, 0.05);
+}
+
+.sheet-card h3 {
+    margin: 0 0 6px;
+    color: var(--text);
+    font-size: 20px;
+}
+
+.sheet-card h4 {
+    margin: 18px 0 8px;
+    color: var(--accent-sage);
+    font-size: 14px;
+}
+
+.sheet-note {
+    margin: 0 0 14px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.formula-list {
+    margin: 0;
+}
+
+.formula-list > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.formula-list > div:last-child {
+    border-bottom: 0;
+}
+
+.formula-list dt {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.formula-list dd {
+    margin: 0;
+    color: var(--text);
+    font-family: Georgia, serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.formula-list sup {
+    font-size: 0.75em;
+}
+
+.trend-table-wrap,
+.table-wrap {
+    overflow-x: auto;
+}
+
+.trend-table,
+.blueprint-table,
+.planner-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.trend-table th,
+.trend-table td,
+.blueprint-table th,
+.blueprint-table td,
+.planner-table th,
+.planner-table td {
+    padding: 11px 12px;
+    border: 1px solid var(--border);
+}
+
+.trend-table th,
+.blueprint-table thead th,
+.planner-table thead th {
+    background: var(--surface-strong);
+    color: var(--text);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.trend-table th[scope="row"],
+.blueprint-table th[scope="row"],
+.planner-table th[scope="row"] {
+    color: var(--text);
+    font-size: 13px;
+}
+
+.trend-table td,
+.blueprint-table td,
+.planner-table td {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.blueprint-table {
+    min-width: 620px;
+}
+
+.blueprint-table caption {
+    padding: 0 0 10px;
+    color: var(--muted);
+    font-size: 14px;
+    text-align: left;
+}
+
+.blueprint-note {
+    max-width: 760px;
+    margin: 12px 0 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.print-hint {
+    margin: 0 0 14px;
+    color: var(--accent-sage);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.planner-table {
+    min-width: 680px;
+}
+
+.planner-table th,
+.planner-table td {
+    height: 48px;
+}
+
+.planner-table tbody td {
+    background: var(--surface);
+}
+
+@media (max-width: 900px) {
+    .sheet-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .essentials-main {
+        padding-top: 28px;
+    }
+
+    .sheet-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .essentials-heading h2 {
+        font-size: 24px;
+    }
+
+    .sheet-card {
+        padding: 18px;
+    }
+}
+
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 14mm;
+    }
+
+    body {
+        background: #FFFFFF;
+        color: #26211D;
+        font-family: Georgia, serif;
+    }
+
+    .header,
+    footer,
+    .essentials-intro,
+    .quick-sheets-section,
+    .blueprint-section,
+    .print-hint {
+        display: none !important;
+    }
+
+    .essentials-main {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .planner-section {
+        margin: 0;
+    }
+
+    .essentials-heading {
+        margin-bottom: 16px;
+    }
+
+    .essentials-heading .eyebrow {
+        display: none;
+    }
+
+    .essentials-heading h2 {
+        color: #26211D;
+        font-size: 22pt;
+    }
+
+    .table-wrap {
+        overflow: visible;
+    }
+
+    .planner-table {
+        min-width: 0;
+    }
+
+    .planner-table th,
+    .planner-table td {
+        height: 20mm;
+        padding: 5px;
+        border: 1px solid #8C7456;
+        color: #26211D;
+        font-size: 10pt;
+    }
+
+    .planner-table thead th {
+        background: #EFE9E0 !important;
+        color: #26211D !important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}

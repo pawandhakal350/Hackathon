@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Essentials | Study Hub</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/essentials.css">
+</head>
+<body>
+    <header class="header">
+        <a class="brand" href="../../index.html" aria-label="Study Hub home">
+            <span class="brand-mark">S</span>
+            <span>Study Hub</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="../../index.html">Home</a>
+            <a href="../../index.html#subjects">Subjects</a>
+            <a class="active" href="essentials.html" aria-current="page">Essentials</a>
+        </nav>
+        <a class="profile-link" href="profile.html" aria-label="Open profile">Login</a>
+    </header>
+
+    <main class="essentials-main">
+        <section class="essentials-intro" aria-labelledby="essentials-title">
+            <p class="eyebrow">STUDY SMARTER</p>
+            <h1 id="essentials-title">Study essentials</h1>
+            <p>Quick-reference sheets, an exam-planning guide, and a weekly revision planner.</p>
+        </section>
+
+        <section class="essentials-section quick-sheets-section" aria-labelledby="quick-sheets-title">
+            <div class="essentials-heading">
+                <p class="eyebrow">QUICK REFERENCE</p>
+                <h2 id="quick-sheets-title">Formula &amp; cheat sheets</h2>
+            </div>
+
+            <div class="sheet-grid">
+                <article class="sheet-card">
+                    <h3>Physics constants</h3>
+                    <p class="sheet-note">Common reference values</p>
+                    <dl class="formula-list">
+                        <div><dt>Gravitational acceleration, g</dt><dd>9.81 m/s<sup>2</sup></dd></div>
+                        <div><dt>Speed of light, c</dt><dd>3.00 &times; 10<sup>8</sup> m/s</dd></div>
+                        <div><dt>Gravitational constant, G</dt><dd>6.674 &times; 10<sup>-11</sup> N m<sup>2</sup>/kg<sup>2</sup></dd></div>
+                        <div><dt>Planck constant, h</dt><dd>6.626 &times; 10<sup>-34</sup> J s</dd></div>
+                        <div><dt>Elementary charge, e</dt><dd>1.602 &times; 10<sup>-19</sup> C</dd></div>
+                    </dl>
+                </article>
+
+                <article class="sheet-card">
+                    <h3>Calculus essentials</h3>
+                    <p class="sheet-note">Differentiate and integrate with respect to x</p>
+                    <h4>Derivatives</h4>
+                    <dl class="formula-list">
+                        <div><dt>d(x<sup>n</sup>)/dx</dt><dd>n x<sup>n-1</sup></dd></div>
+                        <div><dt>d(sin x)/dx</dt><dd>cos x</dd></div>
+                        <div><dt>d(cos x)/dx</dt><dd>-sin x</dd></div>
+                        <div><dt>d(e<sup>x</sup>)/dx</dt><dd>e<sup>x</sup></dd></div>
+                    </dl>
+                    <h4>Integrals</h4>
+                    <dl class="formula-list">
+                        <div><dt>&int; x<sup>n</sup> dx</dt><dd>x<sup>n+1</sup>/(n+1) + C</dd></div>
+                        <div><dt>&int; 1/x dx</dt><dd>ln|x| + C</dd></div>
+                        <div><dt>&int; sin x dx</dt><dd>-cos x + C</dd></div>
+                        <div><dt>&int; cos x dx</dt><dd>sin x + C</dd></div>
+                    </dl>
+                    <p class="sheet-note">Power rule for integrals assumes n &ne; -1.</p>
+                </article>
+
+                <article class="sheet-card">
+                    <h3>Periodic trends</h3>
+                    <p class="sheet-note">General direction across a period and down a group</p>
+                    <div class="trend-table-wrap">
+                        <table class="trend-table">
+                            <thead>
+                                <tr><th scope="col">Property</th><th scope="col">Across &rarr;</th><th scope="col">Down &darr;</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><th scope="row">Atomic radius</th><td>Decreases</td><td>Increases</td></tr>
+                                <tr><th scope="row">Ionization energy</th><td>Increases</td><td>Decreases</td></tr>
+                                <tr><th scope="row">Electronegativity</th><td>Increases</td><td>Decreases</td></tr>
+                                <tr><th scope="row">Metallic character</th><td>Decreases</td><td>Increases</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="essentials-section blueprint-section" aria-labelledby="blueprint-title">
+            <div class="essentials-heading">
+                <p class="eyebrow">PLAN YOUR PRACTICE</p>
+                <h2 id="blueprint-title">NEB +2 / college exam blueprint</h2>
+            </div>
+            <div class="table-wrap">
+                <table class="blueprint-table">
+                    <caption>Illustrative 100-mark practice split by question type</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Level</th>
+                            <th scope="col">MCQs</th>
+                            <th scope="col">Short questions</th>
+                            <th scope="col">Long questions</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">NEB +2 (sample)</th><td>20 marks</td><td>40 marks</td><td>40 marks</td><td>100 marks</td></tr>
+                        <tr><th scope="row">College (sample)</th><td>15 marks</td><td>35 marks</td><td>50 marks</td><td>100 marks</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="blueprint-note">These are practice-planning examples, not official exam blueprints. Check the latest subject-specific syllabus from your board or college.</p>
+        </section>
+
+        <section class="essentials-section planner-section" aria-labelledby="planner-title">
+            <div class="essentials-heading">
+                <p class="eyebrow">MAKE A PLAN</p>
+                <h2 id="planner-title">Weekly revision planner</h2>
+            </div>
+            <p class="print-hint">Press Ctrl + P to print this weekly timetable.</p>
+            <div class="table-wrap">
+                <table class="planner-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Study block</th>
+                            <th scope="col">Subject / topic</th>
+                            <th scope="col">Revision / practice goal</th>
+                            <th scope="col">Done</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Monday</th><td></td><td></td><td></td><td></td></tr>
+                        <tr><th scope="row">Tuesday</th><td></td><td></td><td></td><td></td></tr>
+                        <tr><th scope="row">Wednesday</th><td></td><td></td><td></td><td></td></tr>
+                        <tr><th scope="row">Thursday</th><td></td><td></td><td></td><td></td></tr>
+                        <tr><th scope="row">Friday</th><td></td><td></td><td></td><td></td></tr>
+                        <tr><th scope="row">Saturday</th><td></td><td></td><td></td><td></td></tr>
+                        <tr><th scope="row">Sunday</th><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Study Hub</p>
+    </footer>
+</body>
+</html>

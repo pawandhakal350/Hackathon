@@ -1,0 +1,110 @@
+:root {
+    --background: #F7F3EE;
+    --surface: #FFFFFF;
+    --surface-strong: #EFE9E0;
+    --text: #26211D;
+    --muted: #6E5D4F;
+    --primary: #A85A3A;
+    --accent-tan: #8C7456;
+    --accent-sage: #4A6B5D;
+    --border: #DFD6C9;
+    --input-border: #D5CBBF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(ellipse at 10% 12%, rgba(168, 90, 58, 0.06) 0, transparent 35%),
+        radial-gradient(ellipse at 92% 85%, rgba(74, 107, 93, 0.06) 0, transparent 32%),
+        var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+}
+
+.login {
+    width: min(420px, 100%);
+    padding: 36px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: var(--surface);
+    box-shadow: 0 18px 48px rgba(38, 33, 29, 0.08);
+}
+
+.home-link {
+    display: inline-block;
+    margin-bottom: 32px;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: var(--accent-sage);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.intro {
+    margin: 10px 0 26px;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+    margin: 16px 0 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+}
+
+input:focus {
+    border-color: var(--primary);
+    outline: 2px solid rgba(168, 90, 58, 0.18);
+}
+
+button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 13px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--primary);
+    color: #FFFFFF;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.08);
+}
+
+@media (max-width: 480px) {
+    .login {
+        padding: 28px 22px;
+    }
+}
