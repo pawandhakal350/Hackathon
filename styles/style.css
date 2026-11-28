@@ -454,7 +454,7 @@ h1 {
     background: #ffffff;
     box-shadow: 0 4px 15px rgba(38, 33, 29, 0.05);
     animation: fade-up 0.6s ease-out both;
-    transition: transform 0.25s ease, border-color 0.25s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .image-gallery figure:nth-child(2) {
@@ -462,14 +462,14 @@ h1 {
 }
 
 .image-gallery figure:hover {
-    transform: translateY(-4px);
-    border-color: var(--primary);
+    transform: translateY(-3px);
+    border-color: #d6c7b2;
     box-shadow: 0 8px 20px rgba(168, 90, 58, 0.10);
 }
 
 .image-gallery img {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    height: 180px;
     display: block;
     object-fit: cover;
     border-radius: 10px;
@@ -492,9 +492,36 @@ h1 {
 }
 
 .image-gallery figcaption {
-    padding: 14px 0 0;
+    display: grid;
+    gap: 4px;
+    padding: 14px 0 2px;
     color: var(--text);
-    font-weight: bold;
+}
+
+.image-gallery figcaption strong {
+    font-size: 18px;
+}
+
+.gallery-description {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.gallery-action {
+    margin-top: 6px;
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.gallery-action span {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.image-gallery figure:hover .gallery-action span {
+    transform: translateX(4px);
 }
 
 .subjects {
@@ -547,17 +574,23 @@ h1 {
     color: var(--muted);
     cursor: pointer;
     font-size: 14px;
-    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .level-filters label:hover {
     background: var(--surface-strong);
+    border-color: #d6c7b2;
+    transform: translateY(-1px);
 }
 
 .level-filters input:checked + label {
     border-color: var(--primary);
     background: var(--surface-strong);
     color: var(--text);
+}
+
+#level-all:checked + label {
+    box-shadow: 0 4px 12px rgba(168, 90, 58, 0.14);
 }
 
 .level-filters input:focus-visible + label {
@@ -597,7 +630,7 @@ h1 {
 
 .subject-card:hover {
     transform: translateY(-3px);
-    border-color: var(--primary);
+    border-color: #d6c7b2;
     box-shadow: 0 8px 20px rgba(168, 90, 58, 0.10);
 }
 
@@ -686,10 +719,13 @@ h1 {
 }
 
 footer {
-    padding: 22px;
-    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 28px;
+    border-top: 1px solid #e6dfd5;
     color: var(--muted);
-    text-align: center;
 }
 
 footer p {
