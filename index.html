@@ -4,64 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Hub</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23A85A3A'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Arial,sans-serif' font-size='44' font-weight='700' fill='%23fff'%3ES%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
 </head>
-<body>
-    <header class="header">
-        <a class="brand" href="index.html" aria-label="Study Hub home">
-            <span class="brand-mark">S</span>
-            <span>Study Hub</span>
-        </a>
-
-        <nav class="nav" aria-label="Main navigation">
-            <a class="active" href="index.html">Home</a>
-            <a href="#subjects">Subjects</a>
+<body class="sidebar-layout">
+    <input class="sidebar-checkbox" type="checkbox" id="sidebar-toggle" aria-label="Toggle navigation">
+    <label class="sidebar-open" for="sidebar-toggle" aria-label="Open navigation menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        <span>Menu</span>
+    </label>
+    <aside class="site-sidebar" aria-label="Study Hub navigation">
+        <div class="sidebar-top">
+            <a class="sidebar-brand" href="index.html" aria-label="Study Hub home">
+                <span class="sidebar-brand-mark">S</span>
+                <span>Study Hub</span>
+            </a>
+            <label class="sidebar-close" for="sidebar-toggle" aria-label="Close navigation menu">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+            </label>
+        </div>
+        <nav class="sidebar-nav" aria-label="Main navigation">
+            <a class="sidebar-link" href="index.html" aria-current="page">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>
+                <span>Home</span>
+            </a>
+            <a class="sidebar-link" href="index.html#subjects">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 1 4 17.5zM4 5.5v12M8 7h8M8 11h8"></path></svg>
+                <span>Subjects</span>
+            </a>
+            <a class="sidebar-link" href="pages/app/essentials.html">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"></path></svg>
+                <span>Study Essentials</span>
+            </a>
+            <a class="sidebar-link" href="pages/notes/index.html">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM14 3v5h5M8 12h8M8 16h8"></path></svg>
+                <span>Notes</span>
+            </a>
+            <a class="sidebar-link" href="pages/app/profile.html">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg>
+                <span>Profile / Login</span>
+            </a>
         </nav>
-
-        <a class="profile-link" href="pages/app/profile.html" aria-label="Open profile">
-            <span class="profile-icon">&#128100;</span>
-            <span>Login</span>
-        </a>
-    </header>
+    </aside>
+    <label class="sidebar-backdrop" for="sidebar-toggle" aria-hidden="true"></label>
 
     <main>
         <section class="hero">
             <div class="hero-content">
                 <p class="eyebrow">YOUR LEARNING SPACE</p>
-                <h1>Master your courses. Ace your exams.</h1>
-                <p class="hero-text">Organized notes, practice quizzes, and study tools for high school and college.</p>
+                <h1>Welcome back, Student!</h1>
+                <p class="hero-text">Pick up where you left off with organized notes, practice quizzes, and study tools for every subject.</p>
 
-                <form class="search" action="#" method="get">
-                    <input type="search" name="q" placeholder="What do you want to learn?">
-                    <button type="submit">Search</button>
-                </form>
+                <div class="search-area">
+                    <form class="search" action="#" method="get">
+                        <input type="search" name="q" aria-label="Search study materials" placeholder="Search subjects, notes, formulas...">
+                        <button type="submit">Search</button>
+                    </form>
+                    <nav class="search-suggestions" aria-label="Quick jump links">
+                        <p>Quick Jump Links</p>
+                        <a href="pages/subjects/Mathematics.html">Algebra Formulas</a>
+                        <a href="pages/subjects/physics.html">Physics Constants</a>
+                        <a href="pages/subjects/nepali.html">Nepali Grammar</a>
+                    </nav>
+                </div>
             </div>
 
             <div class="hero-card">
-                <p class="streak-title">Start your streak</p>
-                <p class="streak-text">Sign up to track your progress</p>
-                <a class="hero-cta" href="pages/app/profile.html">Sign up / Log in</a>
+                <div class="dashboard-preview" aria-hidden="true">
+                    <div class="preview-header">
+                        <span class="preview-caption">WEEKLY PROGRESS</span>
+                        <span class="preview-status">ON TRACK</span>
+                    </div>
+                    <div class="preview-progress">
+                        <div class="preview-ring"><span>72%</span></div>
+                        <div class="preview-bars">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="preview-days"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
+                </div>
+                <p class="streak-title">Make every session count</p>
+                <p class="streak-text">Create an account to save your progress and keep your study streak going.</p>
+                <a class="hero-cta" href="pages/app/profile.html">Sign up / Log in <span aria-hidden="true">&rarr;</span></a>
             </div>
-        </section>
-
-        <section class="image-gallery" aria-label="Study highlights">
-            <figure>
-                <a class="gallery-link" href="pages/app/essentials.html">
-                    <img src="assets/images/study-desk.svg" alt="A laptop and books on a study desk">
-                    <figcaption>Study essentials</figcaption>
-                </a>
-            </figure>
-            <figure>
-                <img src="assets/images/open-book.svg" alt="An open book with a pencil">
-                <figcaption>Explore lessons</figcaption>
-            </figure>
         </section>
 
         <section class="subjects" id="subjects">
             <div class="section-heading">
                 <div>
-                    <p class="eyebrow">EXPLORE</p>
-                    <h2>Study subjects</h2>
+                    <h2>Popular subjects</h2>
                 </div>
                 <a href="#level-filters">View all</a>
             </div>
@@ -139,12 +171,25 @@
                 <p class="level-empty">College-level subjects are coming soon.</p>
             </div>
         </section>
+
+        <section class="image-gallery" aria-label="Study highlights">
+            <figure>
+                <a class="gallery-link" href="pages/app/essentials.html">
+                    <img src="assets/images/study-desk.svg" alt="A laptop and books on a study desk">
+                    <figcaption>Study essentials</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <img src="assets/images/open-book.svg" alt="An open book with a pencil">
+                <figcaption>Explore lessons</figcaption>
+            </figure>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Study Hub</p>
         <p>All rights reserved.</p><br>
-        <p>Contact us :pawanDhakal350@gmail.com</p><br>
+        <p>Contact us: <a href="mailto:pawanDhakal350@gmail.com">pawanDhakal350@gmail.com</a></p><br>
         <a href="#">Help</a>
     </footer>
 </body>
